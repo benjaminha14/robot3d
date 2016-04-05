@@ -1,0 +1,22 @@
+/*
+    Blue Boarders for Text 
+*/
+.right-blueLine{
+    margin-top: 170px;
+    width: 120%;
+    height: auto;
+    margin-left:0%;
+    padding-left: 5%;
+    padding-right: 10%;
+    border-right: solid blue 1px;
+
+}
+.left-blueLine{
+    
+    width: 120%;
+    height: auto;
+    
+    padding-left: 10%;
+    padding-right: 5%;
+    border-left: solid blue 1px;
+}

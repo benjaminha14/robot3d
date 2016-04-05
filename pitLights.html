@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Colorpicker demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <title>Team 254</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <script src="scripts/colorPicker.js"></script>
+    <script src="minicolors/jquery.minicolors.js"></script>
+    <link rel="stylesheet" href="minicolors/jquery.minicolors.css">
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $.minicolors = {
+                defaults: {
+                    animationSpeed: 70,
+                    animationEasing: 'swing',
+                    change: null,
+                    changeDelay: 0,
+                    control: 'wheel',
+                    dataUris: true,
+                    defaultValue: '',
+                    format: 'hex',
+                    hide: null,
+                    hideSpeed: 100,
+                    inline: true,
+                    keywords: '',
+                    letterCase: 'lowercase',
+                    opacity: false,
+                    position: 'center',
+                    show: null,
+                    showSpeed: 100,
+                    theme: 'default',
+                    swatches: []
+                }
+            };
+            $('.demo').minicolors();
+        });
+    </script>
+
+
+    <nav class="navbar navbar-fixed-top navbar-default">
+        <div class="container-fluid" id="navbarContainer">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" class="headerImage" src="images/254swoosh.png" />
+                </a>
+                <p class="headerText" href="#">Team 254</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row lightHeaderImage">
+        <img width="100%" src="images/lightControlHeader.png">
+    </div>
+
+    <div class="pickerContainer row">
+        <div class="container">
+            <div class="col-md-4"></div>
+            <div class="col-md-3">
+                <!--<img src="images/color-wheel.png" width="100%" />-->
+                <input type="text" id="inline" class="form-control demo minicolors-input" data-inline="false" value="#aacadb" size="7">
+            </div>
+        </div>
+    </div>
+    <div class="ctrlContainer">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6-offset-3">
+                <div class="btn-group" role="group" aria-label="...">
+                    <div class="btn-group btn-group-lg" role="group" aria-label="..." id="presetButtons">
+                        <button type="button" class="btn btn-default presetButton">Knightrider</button>
+                        <button type="button" class="btn btn-default presetButton active">Solid</button>
+                        <button type="button" class="btn btn-default presetButton">Blinking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed Footer -->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="centered-pills">
+                <ul class="nav nav-pills ">
+                    <li role="presentation"><a href="index.html">Home</a></li>
+                    <li role="presentation"><a href="robots.html">Robots</a></li>
+                    <li role="presentation"><a href="outreach.html">Outreach</a></li>
+                    <li role="presentation"><a href="technical.html">Technical</a></li>
+                    <li role="presentation" class="active"><a href="pitLights.html">Light Control</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <script>
+        $("#presetButtons button").on('click', function() {
+            $(this).siblings().removeClass('active')
+            $(this).addClass('active');
+        })
+    </script>
+
+
+</body>
+</html>

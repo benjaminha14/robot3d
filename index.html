@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+    pinch to zoom
+    multitouch?
+    disable right click
+    add swipe left/right between pages
+    visual scrollbar
+-->
+<html>
+
+<head>
+    <title>Team 254</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js"></script>
+    <script language="javascript">
+        document.onmousedown = disableclick;
+        var status = "Right Click Disabled";
+       element.requestFullscreen()
+        function disableclick(event) {
+            if (event.button == 2) {
+          //      alert(status);
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body id="indexPage-body">
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-fixed-top navbar-default">
+        <div class="container-fluid" id="navbarContainer">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" class="headerImage" src="images/254swoosh.png" />
+                </a>
+                <p class="headerText" href="#">Team 254</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Body -->
+
+    <div id="main-body indexPage-child">
+        <!-- Home Page -->
+        <section id="homePage">
+            <img class="teamImage" src="https://media.team254.com/resources/2016-team-picture-min.jpg">
+            <img class="teamNameImage" src="../homePage/images/home_triangles.png">
+
+            <div class="container">
+                <div class="row writtenContent">
+                    <div class="col-xs-6 right-text">
+                        <h1>About Us</h1>
+                        <p id="aboutPage">
+                            Team 254 is a FIRST robotics team from San Jose, California, comprised of over 100 high school students. We participate in FIRST (For Inspiration and Recognition of Science and Technology) and VEX, all of which are worldwide robotics competitions that
+                            contain thousands of teams and hundreds of thousands of students. These competitions strive to inspire young people to be leaders in the technological and scientific world. Our robotics program encourages innovation and fosters
+                            well-rounded life skills including self-confidence, communication, and leadership. Robotics builds a solid foundation in engineering and technology and gives a real life perspective on math and science.
+                        </p>
+                    </div>
+                    <div class="col-xs-6 left-text">
+                        <h1>Over past 18 years...</h1>
+                        <p>FRC Team 254: The Cheesy Poofs, has grown from one of the smallest programs in the country at a struggling high school to a large multifaceted organization. In 1998, NASA engineers Bob Holmes and Steve Kyramarios joined Jason
+                            Morella, then an English teacher, in founding the Cheesy Poofs. When Broadway High School was downsized, the program moved to Bellarmine College Preparatory in the fall of 2000. Since then, the team has won the FIRST Chairman's
+                            Award, two FIRST Championships, and hosted its own annual FRC offseason tournament. The team started with as few as 5 members, and has since grown to 116 members.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="indexPicContainer">
+                <img id="indexPic" src="../homePage/images/pit-display.png" width="90%" />
+            </div>
+
+            <div class="container">
+                <div class="row writtenContent">
+                    <div class="col-xs-6 right-text">
+                        <h1>In addition to participating in the FIRST Robotics Competition...</h1>
+                        <p id="outReach">
+                            Team 254 participates in other robotics programs as well as various outreach events. In the past two years, Team 254 students have completed thousands of community oriented service hours, founded 3 elementary school robotics programs, and attended more
+                            than 130 events to demonstrate what Robotics is all about. Not only do Team 254 students acquire technical skills, they also learn the fundamentals of other corporate tasks, such as project management, leadership, team building,
+                            marketing, etc.
+                        </p>
+                    </div>
+                    <div class="col-xs-6 left-text">
+                        <h1>More important than any competitive success or awards...</h1>
+                        <p>
+                            The students of Team 254 grow academically, intellectually, and socially. Team 254 members gain a better understanding, a greater respect, and a more profound appreciation of the benefits of a good education. Much like NASA and Bellarmine College Preparatory,
+                            FIRST is an organization which inspires and motivates our students to avidly pursue their academic, career, and personal goals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+
+    <!-- Fixed Footer -->
+    <nav id="footer" class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="centered-pills">
+                <ul class="nav nav-pills ">
+                    <li role="presentation" class="active"><a href="#homePage">Home</a></li>
+                    <li role="presentation"><a href="robots.html">Robots</a></li>
+                    <li role="presentation"><a href="outreach.html">Outreach</a></li>
+                    <li role="presentation"><a href="technical.html">Technical</a></li>
+                    <!--<li role="presentation"><a href="pitLights.html">Light Control</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
